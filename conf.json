@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "description": "Some text",
+  "train": {
+    "batch_size": 128,
+    "seq_length": 50,
+    "training_runs": 3,
+    "num_epochs": 100,
+    "initial_epoch": 0,
+    "epochs_before_decay": 10,
+    "lrate": 1e-3,
+    "patience": 10,
+    "steps_per_epoch": -1,
+    "validation_steps": -1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "train": {
+      "type": "object",
+      "properties": {
+          "batch_size": { "type": "number"},
+          "seq_length": { "type": "number"},
+          "steps_per_epoch": { "type": "number"},
+          "validation_steps": { "type": "number"},
+          "num_epochs": { "type": "number"},
+          "epochs_before_decay": { "type": "number"},
+          "lrate": { "type": "number"},
+          "patience": { "type": "number"}
+      }
+    }
+  },
+  "required": ["name", "description"]
+}
