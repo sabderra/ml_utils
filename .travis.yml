@@ -10,3 +10,6 @@ install:
   - pip install -r test/requirements.txt
   - pip install setuptools
   - pip install .
+
+script:
+  - python -m pytest ./test/test_config.py
