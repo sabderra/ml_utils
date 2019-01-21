@@ -1,7 +1,15 @@
+dist: xenial
 language: python
 python:
   - "3.6"
+before_install:
+  - sudo apt-get update -qq
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install -r test/requirements.txt
+  - pip install setuptools
   - pip install .
+
+script:
+  - python -m pytest ./test/test_config.py
