@@ -3,7 +3,7 @@ import pytest
 import os
 import sys
 from jsonschema import validate
-sys.path.append('../src')
+sys.path.append('../')
 
 from ml_utils import config
 

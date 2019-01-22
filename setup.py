@@ -8,6 +8,6 @@ setup(name='ml-utils',
       url='https://github.com/sabderra/ml_utils',
       install_requires=['jsonschema>=2.6.0', 'cloudant>=2.10.2', 'numpy>=1.15.1'],
       license='MIT',
-      package_dir={'': 'src'},
+      package_dir={'': 'ml_utils'},
       packages=find_namespace_packages(where='src')
       )
